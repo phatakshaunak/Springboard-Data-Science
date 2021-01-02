@@ -39,4 +39,7 @@ Two modeling tasks were undertaken:
   This can be explained clearly in the [schematic](https://www.researchgate.net/publication/341618027_Forecasting_Sales_of_Truck_Components_A_Machine_Learning_Approach) above
   * Further, features were tested systematically for their importance. It was observed that model performance did not improve beyond adding the first lag feature as seen below.
 ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/lag_var.png)
+  * Apart from the 1st lag, time features provided a slight improvement in performance. Weather and other pollutant features did not add any improved performance.
+  * Following are the model comparison results when applying walk forward validation with 3 train/test splits alongwith 3 splits for nested cross-validation to tune hyper-parameters.
+![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_metrics.png)
   
