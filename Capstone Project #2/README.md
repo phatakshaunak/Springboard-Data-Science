@@ -65,6 +65,6 @@ Two modeling tasks were undertaken:
   * https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting
   * https://medium.com/mongolian-data-stories/ulaanbaatar-air-pollution-part-1-35e17c83f70b
   * https://machinelearningmastery.com/convert-time-series-supervised-learning-problem-python/
-
   
+  The notebook used for this project can be located [here](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Notebooks/Capstone_Project_PM_25_Prediction.ipynb)
   
