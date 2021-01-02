@@ -52,6 +52,7 @@ Two modeling tasks were undertaken:
   ## 4. Conclusions
   
   * This project aimed at applying supervised learning to a multivariate time series to create hourly forecasts for PM2.5 in Lucknow, India
+  * Random splitting outperformed time based splits when no lag features were used whereas the performance was similar when lag feeatures were added to the model
   * Results showed that the 1st lag feature for PM2.5 contributed the most to model performance
   * Apart from transformed time features, weather and pollutant variables were not useful in improving the model
   * Results were similar across all models tested indicating that choosing the right features was more important than the type of model
