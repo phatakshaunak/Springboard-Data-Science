@@ -43,7 +43,7 @@ Two modeling tasks were undertaken:
    
    * Further, features were tested systematically for their importance. It was observed that model performance did not improve beyond adding the first lag feature as seen below.<p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/lag_var.png">
       </p>
-     * Apart from the 1st lag for PM2.5 and time features, weather and pollutant features did not further improve modeling performance
-     * As seen in the model metrics comparison, the results are similar across all models
+   * Apart from the 1st lag for PM2.5 and time features, weather and pollutant features did not further improve modeling performance
+   * As seen in the model metrics comparison, the results are similar across all models
       <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_metrics.png">
       </p>
