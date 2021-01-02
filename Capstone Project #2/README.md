@@ -48,8 +48,7 @@ Two modeling tasks were undertaken:
       </p>
   * This forward chaining approach can be extended to train new models for all new predictions instead of a fixed number of sequential splits. This approach though can be very time consuming. Following is such an example applying light gradient boost to make 200 hourly predictions.
       <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_results.png"></p>
- ## 4. Final Conclusion
- * a
+## 4. Final Conclusion
   * This project aimed at creating a forecasting model for particulate matter (PM2.5)
   * It was observed that the 1st lag feature in addition to transformed time features were sufficient to maximize performance
   * Weather and pollutant features did not further improve performance
