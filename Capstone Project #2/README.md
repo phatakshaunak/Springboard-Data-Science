@@ -41,10 +41,10 @@ Two modeling tasks were undertaken:
   * Next, model performances were compared while applying walk forward validation. In this method, each subsequent test split gets added to the training set to make predictions for further test sets whose size remains contant. This can be explained clearly in the following [schematic](https://www.researchgate.net/publication/341618027_Forecasting_Sales_of_Truck_Components_A_Machine_Learning_Approach)
    <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/forward_chaining.png">
       </p>
-      * Further, features were tested systematically for their importance. It was observed that model performance did not improve beyond adding the first lag feature as seen below.
+        * Further, features were tested systematically for their importance. It was observed that model performance did not improve beyond adding the first lag feature as seen below.
       <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/lag_var.png">
       </p>
-      * Apart from the 1st lag for PM2.5 and time features, weather and pollutant features did not further improve modeling performance
-      * As seen in the model metrics comparison, the results are similar across all models
+        * Apart from the 1st lag for PM2.5 and time features, weather and pollutant features did not further improve modeling performance
+        * As seen in the model metrics comparison, the results are similar across all models
       <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_metrics.png">
       </p>
