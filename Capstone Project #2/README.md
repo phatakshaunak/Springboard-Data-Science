@@ -4,8 +4,8 @@ Air pollution is a severe health hazard causing 8.8 million deaths globally. It 
 This project aims to create a model for creating hourly forecasts of particulate matter (PM2.5) in Lucknow, India. The project can be further extended into an application that can provide real time forecasts warning people about hazardous conditions and providing necessary recommendations to take precaution.
   
 <h2>1. Data<h2>
-   The data for this project was obtained from two sources:
-    * Pollution data from the Central Pollution Control Board, India (CPCB) website
-    * Temperature data from the National Oceanic and Atmospheric Administration (NOAA) website
+The data for this project was obtained from two sources:
+  *Pollution data from the Central Pollution Control Board, India (CPCB) website
+  *Temperature data from the National Oceanic and Atmospheric Administration (NOAA) website
     
 <h2>2. Data Wrangling and EDA<h2>
