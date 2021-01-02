@@ -2,6 +2,7 @@
 # **Prediction of PM2.5 in Lucknow, India**
 *Air pollution is a severe health hazard causing 8.8 million deaths globally. It is a significant problem in India where 21 out of the 30 most polluted cities in the world are from India. Among types of air pollutants, particulate matter is very harmful due to its ability to enter the lungs and bloodstream owing to its microscopic size and causing respiratory & health disease. For example, 0.98 out of 1.67 million deaths in India were attributed to particulate pollution in 2019.
 This project aims to create a hourly forecasting model for particulate matter (PM2.5) in Lucknow, India. The project can be further extended into an application that can provide real time forecasts warning people about hazardous conditions and providing necessary recommendations.*\
+\
 The notebook used for this project can be located [here](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Notebooks/Capstone_Project_PM_25_Prediction.ipynb)
 ## 1. Data
 The [data](https://github.com/phatakshaunak/Springboard-Data-Science/tree/master/Capstone%20Project%20%232/Data_CPCB_Lucknow/Cleaned%20Data%20) for the project was obtained from two sources:
@@ -57,13 +58,13 @@ Two modeling tasks were undertaken:
   
   ## 5. References
   
-  * https://www.theguardian.com/environment/2019/mar/12/air-pollution-deaths-are-double-previous-estimates-finds-research
-  * https://ourworldindata.org/air-pollution
-  * https://www.epa.gov/pm-pollution/particulate-matter-pm-basics#PM
-  * https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(20)30298-9/fulltext
-  * https://www.researchgate.net/publication/341618027_Forecasting_Sales_of_Truck_Components_A_Machine_Learning_Approach
-  * https://towardsdatascience.com/time-series-nested-cross-validation-76adba623eb9
-  * https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting
-  * https://medium.com/mongolian-data-stories/ulaanbaatar-air-pollution-part-1-35e17c83f70b
-  * https://machinelearningmastery.com/convert-time-series-supervised-learning-problem-python/
+  1. https://www.theguardian.com/environment/2019/mar/12/air-pollution-deaths-are-double-previous-estimates-finds-research
+  1. https://ourworldindata.org/air-pollution
+  1. https://www.epa.gov/pm-pollution/particulate-matter-pm-basics#PM
+  1. https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(20)30298-9/fulltext
+  1. https://www.researchgate.net/publication/341618027_Forecasting_Sales_of_Truck_Components_A_Machine_Learning_Approach
+  1. https://towardsdatascience.com/time-series-nested-cross-validation-76adba623eb9
+  1. https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting
+  1. https://medium.com/mongolian-data-stories/ulaanbaatar-air-pollution-part-1-35e17c83f70b
+  1. https://machinelearningmastery.com/convert-time-series-supervised-learning-problem-python/
   
