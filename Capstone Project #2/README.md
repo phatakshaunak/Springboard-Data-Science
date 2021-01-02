@@ -17,8 +17,7 @@ Some data cleaning steps are explained as follows:
       * These methods were not applied and most of the data set was left intact. 
       * Certain outliers (~2400 micrograms/cubic metre) as seen in the figure for PM2.5 below were removed. A similar process was followed for sulphur dioxide.\
       **Figure 1 Time series for PM2.5**
-      <p align="center">
-  <b>aa</b>
+      <p align="center">Figure 1 Time series for PM2.5
       <img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/PM_25.png".
       </p>
   * Time features such as month, day of week, hour of day were extracted from the date time index.
