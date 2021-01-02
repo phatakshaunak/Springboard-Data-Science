@@ -33,7 +33,7 @@ Some data cleaning steps are detailed as follows:
 Two modeling tasks were undertaken:
   * Firstly, performances were compared between random train/test splits versus time series split 
     A random train/test split is not applicable for a time series due to the inherent order in the data. It can cause data leakage leading to a model trained on future data be used for predicting past data. This exercise was undertaken simply to compare performances between the two methods and check if random splitting outperformed sequential splits.
-    ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/random_time_results.png)
+    ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/random_results.png)
   * The results showed better performance for a random split when no lag features were observed whereas the performance was similar with lag features.
   * Next, model performances were compared while applying walk forward validation. In this method, each subsequent test split was added to the training set to make predictions for further test sets whose size was kept contant.
    ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/forward_chaining.png)\
