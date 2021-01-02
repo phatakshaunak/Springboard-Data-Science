@@ -42,7 +42,7 @@ Two modeling tasks were undertaken:
   * Apart from the 1st lag, time features provided a slight improvement in performance. Weather and other pollutant features did not add any improved performance.
   * Following are the model comparison results when applying walk forward validation with 3 train/test splits alongwith 3 splits for nested cross-validation to tune hyper-parameters.\
 ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_metrics.png)\
-  * Forward chaining can be taken a step further by training a model for each new prediction instead of a fixed number of splits. Although this could be useful using latest data to make predictions, this approach can be time-consuming. An example for 200 predictions with Light Gradient Boosting is shown below:
-  ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_results.png)\
+  * Forward chaining can be taken a step further by training a model for each new prediction instead of a fixed number of splits. Although this could be useful using latest data to make predictions, this approach can be time-consuming. An example for 200 predictions with Light Gradient Boosting is shown below:\
+  ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_results.png)
   
   
