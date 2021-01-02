@@ -14,8 +14,13 @@ Some data cleaning steps are explained as follows:
   * Rows with missing data for PM2.5 were dropped while other column features were imputed by their means
   * Corrupted data indicated by '999' or negative entries was also imputed with column means
   * Outlier treatment such as bounding by 3 standard deviations of percentile capping significantly changed the data distribution.  
-      * These methods were not applied and most of the data set was left intact. Certain outliers (~2400 micrograms/cubic metre) as seen in the figure for PM2.5
-        below were removed. A similar process was followed for sulphur dioxide.
+      * These methods were not applied and most of the data set was left intact. 
+      * Certain outliers (~2400 micrograms/cubic metre) as seen in the figure for PM2.5 below were removed. A similar process was followed for sulphur dioxide.
+        Figure 1 Time series for PM2.5
         ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/PM_25.png)
   * Time features such as month, day of week, hour of day were extracted from the date time index.
-  * As seen for month and hour, certain cyclic variations were observed for the average values of particulate matter (PM2.5)
+  * As seen below for month and hour, certain cyclic variations were observed for the average values of particulate matter (PM2.5)
+    Figure 2 Bar Chart for average monthly PM2.5 concentration
+    ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/month_pm.png)
+    Figure 3 Bar Chart for average hourly PM2.5 concentration
+    ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/hourly_pm.jpg)
