@@ -16,7 +16,7 @@ Some data cleaning steps are explained as follows:
   * Corrupted data indicated by '999' or negative entries was also imputed with column means
   * Outlier treatment such as bounding by 3 standard deviations of percentile capping significantly changed the data distribution.  
       * These methods were not applied and most of the data set was left intact. 
-      * Certain outliers (~2400 micrograms/cubic metre) as seen in the figure for PM2.5 below were removed. A similar process was followed for sulphur dioxide.\
+      * Certain outliers (~2400 micrograms/cubic metre) as seen in the figure for PM2.5 below were removed. A similar process was followed for sulphur dioxide.
       <p align="center">
       <img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/PM_25.png"></p>
   * Time features such as month, day of week, hour of day were extracted from the date time index.
@@ -25,3 +25,10 @@ Some data cleaning steps are explained as follows:
   * As seen in the images for month and hour, certain cyclic variations were observed for the average values of particulate matter (PM2.5)
       <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/hourly_pm.jpg">
       </p>
+  * Heat map for feature correlations showed the following observations:
+      *	Negative correlations for temperature and wind speed with PM2.5
+      * Slight positive correlations with other pollutant features such as Sulphur dioxide, carbon monoxide and nitrogen-based compounds.
+      * Multi collinearity between some pollutant features such as carbon monoxide and nitrogen compounds as well for pairs of nitrogen compounds
+      <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/Correlation_Map.jpg">
+      </p>
+
