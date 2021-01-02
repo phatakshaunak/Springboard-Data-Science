@@ -16,7 +16,7 @@ Some data cleaning steps are detailed as follows:
   * Dropping rows with missing data for PM2.5 while imputing other column features by their means
   * Imputing corrupted data indicated by '999' or negative entries by their column means
   * Outlier treatment such as bounding by 3 standard deviations of percentile capping significantly changed the data distribution.  
-      * These methods were not applied and most of the data set was left intact. 
+      * These methods were not applied and most of the data set was left intact due to lack of enough domain knowledge
       * Certain outliers (~2400 micrograms/cubic metre) as seen in the figure for PM2.5 below were removed. A similar process was followed for sulphur dioxide.
       ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/PM_25.png)<p align="center">
   * Time features such as month, day of week, hour of day were extracted from the date time index.
