@@ -4,9 +4,10 @@
 This project aims to create a hourly forecasting model for particulate matter (PM2.5) in Lucknow, India. The project can be further extended into an application that can provide real time forecasts warning people about hazardous conditions and providing necessary recommendations.*
   
 ## 1. Data
-The data for the project was obtained from two sources:
+The [data](https://github.com/phatakshaunak/Springboard-Data-Science/tree/master/Capstone%20Project%20%232/Data_CPCB_Lucknow/Cleaned%20Data%20) for the project was obtained from two sources:
   * Pollution data from the Central Pollution Control Board, India (CPCB) website
   * Temperature data from the National Oceanic and Atmospheric Administration (NOAA) website
+  
     
 ## 2. Data Wrangling and EDA
 Some data cleaning steps are explained as follows:
