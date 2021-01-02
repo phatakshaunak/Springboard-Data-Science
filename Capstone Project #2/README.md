@@ -33,17 +33,19 @@ Some data cleaning steps are explained as follows:
       </p>
 ## 3. Modeling
 Two modeling tasks were undertaken:
-  * Performance Comparison between random train/test splits versus time series split  
+  * Firstly, performances were compared between random train/test splits versus time series split 
     A random train/test split is not applicable for a time series due to the inherent order in the data. This would potentially cause data leakge using a model  
     trained on future data to predict past data. This exercise however was undertaken to compare performance between these two methods.
     <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/random_time_results.png">
       </p>
-  * Next, model performances were compared while applying walk forward validation. In this method, each subsequent test split gets added to the training set to make predictions for further test sets whose size remains contant. This can be explained clearly in the following [schematic] (https://www.researchgate.net/publication/341618027_Forecasting_Sales_of_Truck_Components_A_Machine_Learning_Approach)
+  * The results showed better performance for a random split when no lag features were observed whereas the performance was similar with lag features.
+  * Next, model performances were compared while applying walk forward validation. In this method, each subsequent test split was added to the training set to make predictions for further test sets whose size was kept contant. This can be explained clearly in the following [schematic] (https://www.researchgate.net/publication/341618027_Forecasting_Sales_of_Truck_Components_A_Machine_Learning_Approach)
    <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/forward_chaining.png"></p>
-   
-   * Further, features were tested systematically for their importance. It was observed that model performance did not improve beyond adding the first lag feature as seen below.<p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/lag_var.png">
-      </p>
+   * Further, features were tested systematically for their importance. It was observed that model performance did not improve beyond adding the first lag feature as seen below.<p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/lag_var.png"></p>
    * Apart from the 1st lag for PM2.5 and time features, weather and pollutant features did not further improve modeling performance
    * As seen in the model metrics comparison, the results are similar across all models
       <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_metrics.png">
+      </p>
+   * This forward chaining approach can be extended to train new models for all new predictions instead of a fixed number of sequential splits. This approach though can be very time consuming. Following is such an example applying light gradient boost to make 200 hourly predictions.
+      <p align="center"><img src = "https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_results.png">
       </p>
