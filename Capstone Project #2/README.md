@@ -16,7 +16,7 @@ Some data cleaning steps are explained as follows:
   * Outlier treatment such as bounding by 3 standard deviations of percentile capping significantly changed the data distribution.  
       * These methods were not applied and most of the data set was left intact. 
       * Certain outliers (~2400 micrograms/cubic metre) as seen in the figure for PM2.5 below were removed. A similar process was followed for sulphur dioxide.\
-      <p align="center">**Figure 1 Time series for PM2.5**</p>
+      <p align="center">**Figure 1 Time series for PM2.5**</p>/
         ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/PM_25.png)
   * Time features such as month, day of week, hour of day were extracted from the date time index.
   * As seen below for month and hour, certain cyclic variations were observed for the average values of particulate matter (PM2.5)
