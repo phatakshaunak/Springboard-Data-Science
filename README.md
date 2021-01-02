@@ -1,1 +1,1 @@
-# This repository contains a list of all in course projects and two capstone projects as part of [Springboard's Data Science Career Track](https://in.springboard.com/courses/data-science-career-program-online/) during August 2020 - January 2021.
+### This repository contains a list of all in course projects and two capstone projects as part of [Springboard's Data Science Career Track](https://in.springboard.com/courses/data-science-career-program-online/) during August 2020 - January 2021.
