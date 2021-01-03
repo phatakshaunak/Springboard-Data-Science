@@ -45,7 +45,7 @@ Two modeling tasks were undertaken:
 ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_metric.png)   
   * As seen in the table above, the average test RMSE and MAE values are similar for all models indicating that the right features played a more important part than the type of model
   * All the modeling tasks detailed above were conducted with three train/test splits (either random or sequential) and 3 splits for hyper-parameter tuning applying nested cross-validation. Nested cross-validation eliminates the problem of arbitrarily choosing a test set to evaluate a model
-  * Forward chaining can be taken a step further by training a model for each new prediction instead of a fixed number of splits. Although this could be useful alwasys using latest data to make predictions, this approach can be time-consuming. An example for 200 predictions with Light Gradient Boosting is shown below:  
+  * Forward chaining can be taken a step further by training a model for each new prediction instead of a fixed number of splits. Although it is useful using all the available data to make a new prediction, this approach can be time-consuming. An example for 200 predictions with Light Gradient Boosting is shown below:  
   ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_results.png)  
   * As seen in the plots above, the 1st lag feature for PM2.5 has the most importance. A rolling mean (previous 2 values) feature although added to the model did not significantly change the RMSE/MAE.
 
