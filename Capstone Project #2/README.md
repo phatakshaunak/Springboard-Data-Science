@@ -1,9 +1,9 @@
 ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/air_pollution_getty_images.jpg)
 # **Prediction of PM2.5 in Lucknow, India**
 *Air pollution is a severe health hazard causing 8.8 million deaths globally. It is a significant problem in India where 21 out of the 30 most polluted cities in the world are from India. Among types of air pollutants, particulate matter is very harmful due to its ability to enter the lungs and bloodstream owing to its microscopic size and causing respiratory & health disease. For example, 0.98 out of 1.67 million deaths in India were attributed to particulate pollution in 2019.
-This project aims to create a hourly forecasting model for particulate matter (PM2.5) in Lucknow, India. The project can be further extended into an application that can provide real time forecasts warning people about hazardous conditions and providing necessary recommendations.*\
+This project aims to create an hourly forecasting model for particulate matter (PM2.5) in Lucknow, India. The project can be further extended into an application that can provide real time forecasts warning people about hazardous conditions and providing necessary recommendations.*\
 \
-The notebook used for this project can be located [here](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Notebooks/Capstone_Project_PM_25_Prediction.ipynb)
+The notebook used for this work can be located [here](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Notebooks/Capstone_Project_PM_25_Prediction.ipynb)
 ## 1. Data
 The [data](https://github.com/phatakshaunak/Springboard-Data-Science/tree/master/Capstone%20Project%20%232/Data_CPCB_Lucknow/Cleaned%20Data%20) for the project was obtained from two sources:
   * Pollution data from the Central Pollution Control Board, India (CPCB) website
@@ -38,22 +38,24 @@ Two modeling tasks were undertaken:
   * Next, model performances were compared while applying walk forward validation. In this method, each subsequent test split was added to the training set to make predictions for further test sets whose size was kept contant.
    ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/forward_chaining.png)\
   This method can be explained in the [schematic](https://www.researchgate.net/publication/341618027_Forecasting_Sales_of_Truck_Components_A_Machine_Learning_Approach) above 
-  * Further, features were tested systematically for their importance. It was observed that model performance did not improve beyond adding the first lag feature for PM2.5 as seen below.
+  * Further, features were tested systematically to check their usefulness for the model. It was observed that the first lag for PM.5 was sufficient  and that performance did not improve beyond adding the first lag feature as seen below.
 ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/lag_var.png)
-  * Apart from the 1st lag, time features provided a slight improvement in performance. Weather and other pollutant features did not improve performance.
+  * Apart from the 1st lag, the transformed time features provided a slight improvement in performance whereas weather and other pollutant features did not improve the results
   * Following are the model comparison results when applying walk forward validation
 ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_metric.png)   
-  * All the modeling tasks detailed above were carried out with three train/test splits (either random or sequential) and 3 splits for hyper-parameter tuning applying nested cross-validation
-  * Forward chaining can be taken a step further by training a model for each new prediction instead of a fixed number of splits. Although this could be useful using latest data to make predictions, this approach can be time-consuming. An example for 200 predictions with Light Gradient Boosting is shown below:  
+  * As seen in the table above, the average test RMSE and MAE values are similar for all models indicating that the right features played a more important part than the type of model
+  * All the modeling tasks detailed above were conducted with three train/test splits (either random or sequential) and 3 splits for hyper-parameter tuning applying nested cross-validation. Nested cross-validation eliminates the problem of arbitrarily choosing a test set to evaluate a model
+  * Forward chaining can be taken a step further by training a model for each new prediction instead of a fixed number of splits. Although it is useful using all the available data to make a new prediction, this approach can be time-consuming. An example for 200 predictions with Light Gradient Boosting is shown below:  
   ![](https://github.com/phatakshaunak/Springboard-Data-Science/blob/master/Capstone%20Project%20%232/Readme%20Files/walk_forward_results.png)  
-  * As seen in the plots above, the 1st lag feature for PM2.5 has the most importance.
+  * As seen in the plots above, the 1st lag feature for PM2.5 has the most importance. A rolling mean (previous 2 values) feature although added to the model did not significantly change the RMSE/MAE.
 
   ## 4. Conclusions
   
-  * This project aimed at applying supervised learning to a multivariate time series to create hourly forecasts for PM2.5 in Lucknow,India
+  * This project aimed at applying supervised learning to a multivariate time series to create hourly forecasts for PM2.5 in Lucknow, India
+  * Random splitting outperformed time based splits when no lag features were used whereas the performance was similar when lag feeatures were added to the model
   * Results showed that the 1st lag feature for PM2.5 contributed the most to model performance
   * Apart from transformed time features, weather and pollutant variables were not useful in improving the model
-  * Results were similar across all models tested indicating that the selected features were more important than the type of model
+  * Results were similar across all models tested indicating that choosing the right features was more important than the type of model
   
   ## 5. References
   
